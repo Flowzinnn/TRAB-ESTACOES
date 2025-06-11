@@ -91,6 +91,7 @@ function coresEstacao() {
   // Alterna a cor de fundo do container principal das estações
   if (vet_estacao[num_cor]) {
       div_estacoes.style.backgroundColor = vet_estacao[num_cor].cor;
+      document.getElementById('nome_cor').textContent = vet_estacao[num_cor].nome;
       num_cor = (num_cor + 1) % vet_estacao.length;
   }
 }
